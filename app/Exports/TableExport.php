@@ -17,7 +17,7 @@ class TableExport implements FromArray, ShouldAutoSize, WithHeadings
         
         $res = array();
 
-        for ($i = 0; $i < 4; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $lines = array_splice($lines, 7);
             $found = false;
             for ($j = 0; $j < sizeof($lines) && !$found; $j++) {
