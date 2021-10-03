@@ -25,7 +25,7 @@ E para iniciar a aplicação:
 
 ## Objetivo
 
-A tabela requisitada pelo teste pode ser obtida através da URL abaixo:
+A tabela requisitada pelo teste pode ser obtida através da URL abaixo (o processo levará alguns minutos para terminar):
 
 http://localhost/export
 
