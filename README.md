@@ -28,3 +28,9 @@ E para iniciar a aplicação:
 A tabela requisitada pelo teste pode ser obtida através da URL abaixo:
 
 http://localhost/export
+
+Após execução, os logs do processo podem ser encontrados no caminho:
+
+```
+/sicredi/public/logs.txt
+```
