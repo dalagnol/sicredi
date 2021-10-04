@@ -30,8 +30,15 @@ class TableExport implements FromArray, ShouldAutoSize, WithHeadings
     public function array(): array {
         $logFile = fopen("logs.txt", "w");
 
+        fwrite($logfile, "Extração do conteúdo do arquivo PRN.");
+
         $contents = (string) Storage::get('FBAA_MASK.PRN');
+
+        fwrite($logfile, "Criação de um arranjo com todas as linhas do arquivo.");
+
         $lines = explode("\n", $contents);
+
+        fwrite($logfile, "Filtração das linhas que não são dados.");
 
         $lines = array_values(
             array_filter(
@@ -57,6 +64,8 @@ class TableExport implements FromArray, ShouldAutoSize, WithHeadings
 
         $finalArr = array();
 
+        fwrite($logfile, "Separação dos dados de cada linha em seus respectivos tipos e colunas.");
+
         for ($k = 0; $k <= count($lines) - 2; $k = $k + 2) {
             array_push($finalArr, 
                 [
@@ -73,6 +82,8 @@ class TableExport implements FromArray, ShouldAutoSize, WithHeadings
                 ]
             );
         }
+
+        fwrite($logfile, "Retorno das linhas que se tranformarão na tabela com o uso da biblioteca Laravel Excel.");
 
         return [...$finalArr];
     }
