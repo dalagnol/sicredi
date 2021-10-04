@@ -34,3 +34,5 @@ Após execução, os logs do processo podem ser encontrados no caminho:
 ```
 /sicredi/public/logs.txt
 ```
+
+Caso termine de carregar a página e não baixe a tabela, pede-se que configure o Docker para ter acesso à uma maior porção da memória e se possível um maior número de núcleos.
