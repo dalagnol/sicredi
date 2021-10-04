@@ -11,7 +11,7 @@
 <body class="bg-gray-200">
     <div class="flex justify-center">
         <div class="w-8/12 bg-white p-6 rounded-lg">
-            Acesse a página "localhost/landing/export" para baixar a tabela!
+            Acesse a página "localhost/export" para baixar a tabela!
         </div>
     </div>
 </body>

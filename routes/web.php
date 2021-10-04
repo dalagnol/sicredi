@@ -14,6 +14,5 @@ use App\Http\Controllers\FileSystemController;
 |
 */
 
-Route::get("/landing", [FileSystemController::class, "index"]);
-Route::get("/landing/export", [FileSystemController::class, "export"]);
-
+Route::get("/", [FileSystemController::class, "index"]);
+Route::get("/export", [FileSystemController::class, "export"]);
